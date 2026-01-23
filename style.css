@@ -107,3 +107,7 @@ h1 { font-size: 2rem; color: var(--neon); text-align: center; }
     filter: drop-shadow(0 0 10px #00ff00); /* Dak l-glow l-khdar */
     margin-bottom: 20px;
 }
+.scanner img {
+    width: 100px; /* Sgherha bach t-ji f l-west nqiya */
+    height: auto;
+}
