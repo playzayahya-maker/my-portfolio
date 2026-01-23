@@ -35,4 +35,11 @@ document.addEventListener('keypress', (e) => {
     if (e.key === 'Enter' && document.getElementById('gate-page').style.display !== 'none') {
         unlockVault();
     }
+
+});
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    setTimeout(() => {
+        loader.classList.add('fade-out');
+    }, 2000); // 2 seconds dial l-hayba ;)
 });
