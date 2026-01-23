@@ -100,14 +100,3 @@ h1 { font-size: 2rem; color: var(--neon); text-align: center; }
     transition: 0.5s;
     pointer-events: none;
 }
-.main-logo {
-    width: 150px; /* Hna tqder t-sgher awla t-kber 3la hsab chno bghiti */
-    height: auto;  /* Bach t-tswira mat-jbedch (Maintain Aspect Ratio) */
-    max-width: 80%; /* Bach f t-tilifoun mat-kounch kber men l-ecran */
-    filter: drop-shadow(0 0 10px #00ff00); /* Dak l-glow l-khdar */
-    margin-bottom: 20px;
-}
-.scanner img {
-    width: 100px; /* Sgherha bach t-ji f l-west nqiya */
-    height: auto;
-}
