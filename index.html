@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHENA_YDEER | Web Security Architect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanline"></div>
+
+    <section id="gate-page">
+        <div class="terminal-box">
+            <div class="terminal-header">AUTHENTICATION_REQUIRED</div>
+            <div class="terminal-content">
+                <p class="typing-text">>> CORE_STATUS: <span class="neon-txt">SECURE</span></p>
+                <p class="typing-text" style="animation-delay: 1s;">>> IDENTITY_CHALLENGE: ACCESS_KEY_NEEDED</p>
+                <div class="input-zone">
+                    <input type="text" id="passkey" placeholder="Enter Admin Key..." autocomplete="off">
+                    <button onclick="unlockVault()">EXECUTE</button>
+                </div>
+                <p id="error-log"></p>
+            </div>
+        </div>
+    </section>
+
+    <div id="portal-animation" class="portal">
+        <div class="ring"></div><div class="ring"></div><div class="ring"></div>
+    </div>
+
+    <section id="cv-page" style="display: none;">
+        <div class="glass-card">
+            <header class="cv-main-header">
+                <div class="profile-container">
+                    <div class="glitch-frame">
+                        <img src="photo.png" alt="Shena Ydeer" class="profile-img">
+                        <div class="img-scanline"></div>
+                    </div>
+                </div>
+                <div class="badge">PRO_CREATOR</div>
+                <h1>SHENA YDEER</h1>
+                <p class="tagline">Crafting High-Performance Secure Web Solutions</p>
+            </header>
+
+            <div class="cv-grid">
+                <div class="cv-col">
+                    <div class="section-box">
+                        <h3>🚀 PROFESSIONAL_SERVICES</h3>
+                        <p>Custom Web Applications, High-End UI/UX, & Performance Optimization.</p>
+                    </div>
+                    <div class="section-box">
+                        <h3>💎 UNIQUE_PROJECTS</h3>
+                        <ul>
+                            <li>Sentinel Guard: Advanced Web Firewall</li>
+                            <li>Cyber-Interface: Secure Terminal UI</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cv-col">
+                    <div class="section-box highlight">
+                        <h3>🔒 SECURITY_PROTOCOL_100%</h3>
+                        <ul>
+                            <li>Zero-Trust Input Sanitization</li>
+                            <li>Anti-SQLi Parameterization</li>
+                            <li>Real-time Rate Limiting</li>
+                        </ul>
+                    </div>
+                    <div class="section-box">
+                        <h3>🛠️ TECH_STACK</h3>
+                        <div class="tags">
+                            <span>HTML5</span><span>CSS3</span><span>JS_ES6</span><span>NODE.JS</span><span>SECURITY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="cv-footer">
+                <a href="https://instagram.com/shena_ydeer" class="insta-link" target="_blank">INSTAGRAM: @shena_ydeer</a>
+                <button class="lock-btn" onclick="lockVault()">EXIT_SYSTEM</button>
+            </footer>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
