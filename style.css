@@ -62,4 +62,41 @@ h1 { font-size: 2rem; color: var(--neon); text-align: center; }
     .cv-grid { grid-template-columns: 1fr; }
     .cv-footer { flex-direction: column; gap: 20px; }
     .glass-card { padding: 25px; }
+
+}
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0a0a0a; /* K-hal ghameq */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.scanner img {
+    width: 100px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.scanner p {
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 15px #00ff00); }
+    100% { transform: scale(0.9); opacity: 0.5; }
+}
+
+/* Bach i-ghber l-loader melli i-kemmel l-chargement */
+.fade-out {
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
 }
