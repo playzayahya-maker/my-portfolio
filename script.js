@@ -1,11 +1,4 @@
-const CONFIG = { ADMIN_KEY: "SHENA_ADMIN" };
-
-function unlockVault() {
-    const input = document.getElementById('passkey');
-    const log = document.getElementById('error-log');
-    const val = input.value.trim();
-
-    // Security check for SQLi
+// Security check for SQLi
     if (/[';\-\-]/.test(val) || /OR /i.test(val)) {
         log.style.color = "#ff3e3e";
         log.innerText = ">> SECURITY_PROTOCOL_BLOCK: INJECTION_ATTEMPT";
@@ -43,3 +36,4 @@ window.addEventListener('load', () => {
         loader.classList.add('fade-out');
     }, 2000); // 2 seconds dial l-hayba ;)
 });
+
