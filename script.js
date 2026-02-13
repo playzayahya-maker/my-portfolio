@@ -1,9 +1,4 @@
-const CONFIG = { ADMIN_KEY: "SHENA_ADMIN" };
 
-function unlockVault() {
-    const input = document.getElementById('passkey');
-    const log = document.getElementById('error-log');
-    const val = input.value.trim();
     
      // Security check for SQLi
     if (/[';\-\-]/.test(val) || /OR /i.test(val)) {
@@ -43,5 +38,6 @@ window.addEventListener('load', () => {
         loader.classList.add('fade-out');
     }, 2000); // 2 seconds dial l-hayba ;)
 });
+
 
 
